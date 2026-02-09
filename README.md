@@ -1,3 +1,7 @@
+EOL, I no longer use Armbian but still using thing from this repository. Maybe I can add something more and update something but I'm not sure.
+
+
+
 My Armbian configurations for my Orange Pi 5 Plus 8GB SBC.
 
 I absolutely do not recommend using it, and even if you do, it's at your own risk bro(hacı).
