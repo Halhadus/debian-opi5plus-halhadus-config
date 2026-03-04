@@ -1,11 +1,11 @@
-Source: armbian-opi5plus-halhadus-config
+Source: debian-opi5plus-halhadus-config
 Section: admin
 Priority: optional
 Maintainer: Halhadus <eneshakans45@proton.me>
 Build-Depends: debhelper-compat (= 13)
 Standards-Version: 4.6.2
 
-Package: armbian-opi5plus-halhadus-config
+Package: debian-opi5plus-halhadus-config
 Architecture: arm64
 Depends: ${misc:Depends}, 
     device-tree-compiler,
@@ -39,7 +39,11 @@ Depends: ${misc:Depends},
     nlohmann-json3-dev, libgtk-4-dev, libx11-dev, libxtst-dev, libwf-config1,
     firefox, obs-studio, obs-plugins, obs-pipewire-audio-capture,
     mangohud, goverlay, gamemode, box64-rk3588,
-    arch-install-scripts, seatd, wl-clipboard, mesa-utils, evtest, armbian-plymouth-theme,
+    arch-install-scripts, seatd, wl-clipboard, mesa-utils, evtest,
     bridge-utils, iptables-persistent, nvme-cli, xfce4-settings, xdg-utils, polkit-kde-agent-1,
-    dbus-x11, trace-cmd, libpolkit-agent-1-0, aria2, fio
+    dbus-x11, trace-cmd, libpolkit-agent-1-0, aria2, fio, 
+    strace, gdb, dmidecode, jq, alsa-utils, edid-decode, fake-hwclock,
+    systemd-zram-generator, bash-completion, wget, drm-info, chromium,
+    wlr-randr, network-manager-applet, tigervnc-viewer, gpiod, python3-libgpiod,
+    wayvnc, libssl-dev
 Description: Orange Pi 5 Plus Halhadus Configuration Package

@@ -1,19 +1,5 @@
-armbian-opi5plus-halhadus-config (1.1.0) trixie; urgency=medium
+debian-opi5plus-halhadus-config (1.0.0) sid; urgency=medium
 
-  * Initial native release for OPi5p environment.
-  * Added NVMe scripts and services.
-  * Added dependency tree.
-  * Removed NVMe Gen2 dtbo
-  * Changed something
-  * Panthor
-  * Docker optimisations
-  * Mesa Backports (PanVK Vulkan 1.4)
-  * Removed gstreamer-rockchip
-  * Added custom fan control
-  * Choose onboard mic
-  * Fix
-  * Added all packages
-  * Wi-Fi disabled for one antenna setup
-  * Official fan to Noctua A4x10 5V PWM
+  * Debian
 
- -- Halhadus <eneshakans45@proton.me>  Mon, 21 Dec 2026 17:26:29 +0300
+ -- Halhadus <eneshakans45@proton.me>  Wed, 04 Mar 2026 12:22:05 +0300

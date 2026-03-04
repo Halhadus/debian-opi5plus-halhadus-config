@@ -1,0 +1,1 @@
+ACTION=="add", KERNEL=="zram0", ATTR{mem_limit}="70%"

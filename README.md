@@ -1,5 +1,5 @@
 EOL, I no longer use Armbian but still using thing from this repository. Maybe I can add something more and update something but I'm not sure.
-
+I returned back to Debian(Not Armbian). I will update name etc later.
 
 
 My Armbian configurations for my Orange Pi 5 Plus 8GB SBC.

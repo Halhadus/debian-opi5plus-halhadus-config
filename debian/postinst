@@ -3,38 +3,6 @@ set -e
 
 if [ "$1" = "configure" ]; then
     systemctl enable getty@tty1.service || true
-    chmod +x /usr/sbin/pswpci.sh
-    chmod +x /usr/sbin/onboard-mic.sh
-    chmod +x /usr/sbin/noctuafancontrol.sh
-    ENV_FILE="/boot/armbianEnv.txt"
-    if [ -f "$ENV_FILE" ]; then
-        if grep -q "^extraargs=" "$ENV_FILE"; then
-            if grep -q "^extraargs=.*cma=" "$ENV_FILE"; then
-                sed -i '/^extraargs=/ s/cma=[^ ]*/cma=1G/' "$ENV_FILE"
-            else
-                sed -i '/^extraargs=/ s/$/ cma=1G/' "$ENV_FILE"
-            fi
-        else
-            echo "extraargs=cma=1G" >> "$ENV_FILE"
-        fi
-        if ! grep -q "^overlays=" "$ENV_FILE"; then
-            echo "overlays=panthor-gpu rk3588-pwm0-m0" >> "$ENV_FILE"
-        else
-            if ! grep -q "panthor-gpu" <<< "$(grep "^overlays=" "$ENV_FILE")"; then
-                sed -i '/^overlays=/ s/$/ panthor-gpu/' "$ENV_FILE"
-            fi
-            if ! grep -q "rk3588-pwm0-m0" <<< "$(grep "^overlays=" "$ENV_FILE")"; then
-                sed -i '/^overlays=/ s/$/ rk3588-pwm0-m0/' "$ENV_FILE"
-            fi
-        fi
-        if ! grep -q "^earlycon=" "$ENV_FILE"; then
-            echo "earlycon=on" >> "$ENV_FILE"
-        fi
-        if ! grep -q "^docker_optimizations=" "$ENV_FILE"; then
-            echo "docker_optimizations=on" >> "$ENV_FILE"
-        fi
-        echo "Armbian environment updated (CMA set and Panthor GPU overlay added)."
-    fi
 fi
 
 #DEBHELPER#
