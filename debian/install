@@ -1,5 +1,5 @@
 src/override.conf /etc/systemd/system/getty@tty1.service.d/
 src/blacklist-wifi.conf /etc/modprobe.d/
-src/99-zram.rules /etc/udev/rules.d/99-zram.rules
-src/blacklist-rtc.conf /etc/modprobe.d/blacklist-rtc.conf
-src/zram-generator.conf /etc/systemd/zram-generator.conf
+src/99-zram.rules /etc/udev/rules.d/
+src/blacklist-rtc.conf /etc/modprobe.d/
+src/zram-generator.conf /etc/systemd/

@@ -1,6 +1,7 @@
-debian-opi5plus-halhadus-config (1.0.0) sid; urgency=medium
+debian-opi5plus-halhadus-config (1.0.1) sid; urgency=medium
 
   * Debian
   * Changed depends
+  * Some fixes
 
- -- Halhadus <eneshakans45@proton.me>  Wed, 04 Mar 2026 12:22:05 +0300
+ -- Halhadus <eneshakans45@proton.me>  Wed, 04 Mar 2026 17:03:05 +0300
