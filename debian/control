@@ -39,7 +39,7 @@ Depends: ${misc:Depends},
     arch-install-scripts, seatd, wl-clipboard, mesa-utils, evtest,
     bridge-utils, iptables-persistent, nvme-cli, xfce4-settings, xdg-utils, polkit-kde-agent-1,
     dbus-x11, trace-cmd, libpolkit-agent-1-0, aria2, fio, 
-    strace, gdb, dmidecode, jq, alsa-utils, edid-decode, fake-hwclock,
+    strace, gdb, dmidecode, jq, alsa-utils, edid-decode,
     systemd-zram-generator, bash-completion, wget, drm-info, chromium,
     wlr-randr, network-manager-applet, tigervnc-viewer, gpiod, python3-libgpiod,
     wayvnc, libssl-dev
