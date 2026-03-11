@@ -1,7 +1,8 @@
-debian-opi5plus-halhadus-config (1.0.1) sid; urgency=medium
+debian-opi5plus-halhadus-config (1.0.2) sid; urgency=medium
 
   * Debian
   * Changed depends
   * Some fixes
+  * Removed RTC module blacklist config
 
- -- Halhadus <eneshakans45@proton.me>  Wed, 04 Mar 2026 17:03:05 +0300
+ -- Halhadus <eneshakans45@proton.me>  Wed, 11 Mar 2026 22:37:05 +0300
